@@ -79,4 +79,8 @@
   .message-error-valid {
     font-size: 14px;
   }
+
+  .message-error-valid::before {
+    top: 65px;
+  }
 }
