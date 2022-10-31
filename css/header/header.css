@@ -1,0 +1,25 @@
+
+.header__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.logo__img{
+    width: 50%;
+    height: 50%;
+    background: url(../../img/doguito.svg) no-repeat;
+    
+}
+
+.logo__title{
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+    color: #d6773b;
+    text-shadow: 2px 2px 1px #f9c875;
+}
+

@@ -1,0 +1,23 @@
+@import url(../registro/registro.css);
+@import url(../botones/btn-registro.css);
+@import url(../header/header.css);
+@import url(../input/inputs.css);
+
+body{
+    background-color: #8bd3e1
+}
+
+legend {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 30px 0 0 20px;
+    font-family: "Dancing Script", cursive;
+    color: #8ba88e;
+  }
+
+
+  @media screen and (min-width: 360px) and (max-width: 780px) {
+    legend {
+        font-size: 30px;
+      }
+  }

@@ -1,0 +1,30 @@
+.btn-registro {
+  display: flex;
+  width: 500px;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 25px;
+  /* border: 3px solid #0e4d77; */
+  border-radius: 20px;
+  letter-spacing: 8px;
+  word-spacing: 10px;
+  font-weight: 700;
+  color: aliceblue;
+  background: #000;
+  transition: box-shadow 0.5s ease;
+}
+
+.btn-registro:hover {
+  box-shadow: 5px 5px 1px #d6773b;
+}
+
+@media screen and (min-width: 360px) and (max-width:980px) {
+  .btn-registro {
+    width: 100%;
+    font-size: 18px;
+  }
+}

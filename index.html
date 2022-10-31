@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/base/reset.css" />
+    <link rel="stylesheet" href="./css/base/style.css" />
+    <link rel="icon" href="./img/doguito.svg" />
+    <script
+      src="https://kit.fontawesome.com/9247c6115e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <title>Doguito Tienda Virtual</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__logo">
+        <div class="logo__img"></div>
+        <h1 class="logo__title">Pet-Shop</h1>
+      </div>
+    </header>
+    <main>
+      <section>
+        <form class="formulario__registro" action="">
+          <fieldset>
+            <legend>Información Básica</legend>
+            <section class="registro">
+              <div class="registro__input">
+                <i class="fa-solid fa-user fa-2x input__icon"></i>
+                <input
+                  name="name"
+                  id="name"
+                  class="input__name"
+                  type="text"
+                  placeholder="Nombre"
+                  required
+                  data-tipo="nombre"
+                  pattern="[a-zA-Z \s]{5,30}"
+                />
+                <label for="name" class="input__label">Nombre</label>
+              </div>
+              <span class="registro__span-error">valor incorrecto</span>
+            </section>
+
+            <section class="registro">
+              <div class="registro__input">
+                <i class="fa-solid fa-at fa-2x input__icon"></i>
+                <input
+                  name="email"
+                  id="email"
+                  class="input__name"
+                  type="email"
+                  placeholder="Correo"
+                  required
+                  data-tipo="email"
+                />
+                <label for="email" class="input__label">Correo</label>
+              </div>
+              <span class="registro__span-error">valor incorrecto</span>
+            </section>
+
+            <section class="registro">
+              <div class="registro__input">
+                <i class="fa-solid fa-lock fa-2x input__icon"></i>
+                <input
+                  name="password"
+                  id="password"
+                  class="input__name"
+                  type="password"
+                  placeholder="Contraseña"
+                  pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^*_=+-]).{6,12}$"
+                  required
+                  data-tipo="password"
+                />
+                <label for="password" class="input__label">Contraseña</label>
+              </div>
+              <span class="registro__span-error">valor incorrecto</span>
+            </section>
+          </fieldset>
+
+          <fieldset>
+            <legend>Información Personal</legend>
+            <section class="registro">
+              <div class="registro__input">
+                <i class="fa-solid fa-calendar-days fa-2x input__icon"></i>
+                <input
+                  name="birth"
+                  id="birth"
+                  class="input__name birth"
+                  type="date"
+                  placeholder="Fecha de Nacimiento"
+                  required
+                  data-tipo="nacimiento"
+                />
+                <label for="birth" class="input__label"
+                  >Fecha de Nacimiento</label
+                >
+              </div>
+              <span class="registro__span-error">valor incorrecto</span>
+            </section>
+
+            <section class="registro">
+              <div class="registro__input">
+                <i class="fa-solid fa-phone fa-2x input__icon"></i>
+                <input
+                  name="telef"
+                  id="telef"
+                  class="input__name"
+                  type="tel"
+                  placeholder="Telefono"
+                  required
+                  pattern="^[0-9]{10,10}"
+                  data-tipo="numero"
+                />
+                <label for="telef" class="input__label">Teléfono</label>
+              </div>
+              <span class="registro__span-error">valor incorrecto</span>
+            </section>
+          </fieldset>
+
+          <fieldset>
+            <legend>Dirección</legend>
+
+            <section class="registro">
+              <div class="registro__input">
+                <i class="fa-solid fa-map-location-dot fa-2x input__icon"></i>
+                <input
+                  name="direccion"
+                  id="direccion"
+                  class="input__name"
+                  type="text"
+                  placeholder="Dirección Completa"
+                  required
+                  pattern="[\s\S]{10,40}"
+                  data-tipo="direccion"
+                />
+                <label for="direccion" class="input__label"
+                  >Dirección Completa</label
+                >
+              </div>
+              <span class="registro__span-error">valor incorrecto</span>
+            </section>
+
+            <section class="registro">
+              <div class="registro__input">
+                <i class="fa-solid fa-city fa-2x input__icon"></i>
+                <input
+                  name="city"
+                  id="city"
+                  class="input__name"
+                  type="text"
+                  placeholder="Ciudad"
+                  required
+                  pattern="[\s\S]{5,20}"
+                  data-tipo="ciudad"
+                />
+                <label for="city" class="input__label">Ciudad</label>
+              </div>
+              <span class="registro__span-error">valor incorrecto</span>
+            </section>
+          </fieldset>
+          <div class="btn">
+            <button class="btn-registro">Completar Registro</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./js/script.js" type="module"></script>
+  </body>
+</html>
